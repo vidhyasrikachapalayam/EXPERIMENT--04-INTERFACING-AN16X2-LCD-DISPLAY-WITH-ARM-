@@ -199,10 +199,10 @@ void lcd_display()
 	 lcd=Lcd_create(ports,pins,GPIOB,GPIO_PIN_0,GPIOB,GPIO_PIN_1,LCD_4_BIT_MODE);
 
 	Lcd_cursor(&lcd,0,1);
-	Lcd_string(&lcd,"Name:DHIVYAPRIYA.R\n");
+	Lcd_string(&lcd,"Name:VIDHYASRI.K\n");
 
 	Lcd_cursor(&lcd,1,1);
-	Lcd_string(&lcd,"Reg no:212222230032\n");
+	Lcd_string(&lcd,"Reg no:212222230170\n");
 	for(int x=0;x<100;x++)
 	{
 		Lcd_cursor(&lcd,2,1);
