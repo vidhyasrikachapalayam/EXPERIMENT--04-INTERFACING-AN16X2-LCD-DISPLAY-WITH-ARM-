@@ -5,8 +5,8 @@ REG NO:212222230170
 
 # EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM AND DISPLAY STRING
 
-
- ## Aim: To Interface a 16X2 LCD display to ARM controller  , and simulate it in Proteus 
+ ## Aim:
+ To Interface a 16X2 LCD display to ARM controller  , and simulate it in Proteus 
 ## Components required:
 STM32 CUBE IDE, Proteus 8 simulator .
 ## Theory 
@@ -150,8 +150,7 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
 13. Create a new Proteus project and place STM32F40xx i.e. the same MCU for which the project was created in STM32Cube IDE. 
 14. After creation of the circuit as per requirement as shown below 
 
-14. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
-https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
+14. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.ng
 
 15. click on debug and simulate using simulation as shown below 
 
@@ -162,9 +161,6 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
 
 ## STM 32 CUBE PROGRAM :
 ```
-
- 
-
 #include "main.h"
 #include"lcd.h"
 
@@ -199,10 +195,10 @@ void lcd_display()
 	 lcd=Lcd_create(ports,pins,GPIOB,GPIO_PIN_0,GPIOB,GPIO_PIN_1,LCD_4_BIT_MODE);
 
 	Lcd_cursor(&lcd,0,1);
-	Lcd_string(&lcd,"Name:VIDHYASRI.K\n");
+	Lcd_string(&lcd,"Name:DHIVYAPRIYA.R\n");
 
 	Lcd_cursor(&lcd,1,1);
-	Lcd_string(&lcd,"Reg no:212222230170\n");
+	Lcd_string(&lcd,"Reg no:212222230032\n");
 	for(int x=0;x<100;x++)
 	{
 		Lcd_cursor(&lcd,2,1);
@@ -289,16 +285,19 @@ void assert_failed(uint8_t *file, uint32_t line)
 {
  
 }
+
+
 ```
 
 
 
 ## Output screen shots of proteus  :
- ![image](https://github.com/vidhyasrikachapalayam/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/119477817/9ba05497-5560-4f63-9212-56eb8d32b01c)
+![image](https://github.com/vidhyasrikachapalayam/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/119477817/1bb252dc-1c30-473a-9b05-038fbd8ab033)
 
  
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- ![image](https://github.com/vidhyasrikachapalayam/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/119477817/f8520d75-08c6-486a-a5ed-db3b1e1da59d)
+ ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE):
+ ![image](https://github.com/vidhyasrikachapalayam/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/119477817/4f2e817a-0d02-49b8-965a-a3d2a641848e)
+
 
  
 ## Result :
